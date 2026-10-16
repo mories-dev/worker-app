@@ -1,0 +1,4 @@
+{
+  "message": "これはサーバー（apps/web/public/demo-data.json）から配信された静的な JSON です。",
+  "hint": "Service Worker が有効な状態で一度取得すると、サーバーに届かないときもキャッシュから返されます。"
+}

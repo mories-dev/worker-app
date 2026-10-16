@@ -1,0 +1,127 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.muted {
+  color: var(--color-text-muted);
+  font-size: 0.8125rem;
+}
+
+.error {
+  color: var(--color-danger);
+  font-size: 0.875rem;
+}
+
+.slots {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slot {
+  display: grid;
+  gap: 6px;
+  justify-items: start;
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-muted);
+}
+
+.slotName {
+  display: grid;
+  font-size: 0.8125rem;
+}
+
+.slotName code {
+  font-weight: 700;
+}
+
+.waiting {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--color-warning) 45%, transparent);
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--color-warning) 10%, transparent);
+  font-size: 0.875rem;
+}
+
+.request {
+  display: grid;
+  gap: 6px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border);
+}
+
+.request:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.requestHeader {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result {
+  display: grid;
+  gap: 4px;
+  font-size: 0.875rem;
+}
+
+.body {
+  max-height: 180px;
+  margin: 0;
+  padding: 10px;
+  overflow: auto;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-muted);
+  font-size: 0.75rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.cacheList {
+  display: grid;
+  gap: 2px;
+  max-height: 200px;
+  margin: 0;
+  padding: 8px 10px 8px 1.6em;
+  overflow-y: auto;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-muted);
+  font-size: 0.75rem;
+  word-break: break-all;
+}
+
+.steps {
+  font-size: 0.875rem;
+}
+
+.steps summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.steps ol {
+  display: grid;
+  gap: 4px;
+  margin-top: 8px;
+  padding-left: 1.4em;
+}
+
+@media (width < 520px) {
+  .slots {
+    grid-template-columns: 1fr;
+  }
+}

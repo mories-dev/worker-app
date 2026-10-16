@@ -1,0 +1,93 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.notice {
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-muted);
+  font-size: 0.9rem;
+}
+
+.me {
+  font-size: 1.125rem;
+}
+
+.me strong {
+  color: var(--accent, var(--color-shared));
+}
+
+.tabList {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabItem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-muted);
+  font-size: 0.875rem;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2px 12px;
+  margin: 0;
+  font-size: 0.8125rem;
+}
+
+.facts dt {
+  color: var(--color-text-muted);
+}
+
+.facts dd {
+  margin: 0;
+  font-family: var(--font-mono);
+}
+
+.counter {
+  color: var(--accent, var(--color-shared));
+  font-family: var(--font-mono);
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.stamps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.messages {
+  display: grid;
+  gap: 4px;
+  max-height: 220px;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.message {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.muted {
+  color: var(--color-text-muted);
+  font-size: 0.8125rem;
+}
